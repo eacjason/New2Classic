@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New2Classic Bookmarklet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>New2Classic Bookmarklet</h1>
+    <p>Drag and drop the link below to your bookmarks toolbar or address bar:</p>
+    <a href="javascript:var%20%24jscomp%3D%24jscomp%7C%7C%7B%7D%3B%24jscomp.scope%3D%7B%7D%3B%24jscomp.createTemplateTagFirstArg%3Dfunction(d)%7Breturn%20d.raw%3Dd%7D%3B%24jscomp.createTemplateTagFirstArgWithRaw%3Dfunction(d%2Ca)%7Bd.raw%3Da%3Breturn%20d%7D%3Bfunction%20main()%7Bvar%20d%3Dwindow.location.pathname.split(%22%2F%22)%5B2%5D%2Ca%3Dwindow.location.pathname.split(%22%2F%22)%5B4%5D%3Bfetch(%22%2Fapi%2Fquiz%2Fv1%2Fcourses%2F%22%2Bd%2B%22%2Fquizzes%2F%22%2Ba%2B%22%2Fitems%3Fpage%3D1%26per_page%3D100%22%2C%7Bmethod%3A%22GET%22%2Cheaders%3A%7B%22Content-Type%22%3A%22application%2Fjson%22%7D%7D).then(function(b)%7Breturn%20b.json()%7D).then(function(b)%7Bb%3DconvertQuizData(b)%3BdownloadFile(%22respondus_quiz.txt%22%2Cb)%7D)%7Dfunction%20convertQuizData(d)%7Bvar%20a%3D%22%22%3Bd.forEach(function(b%2Ck)%7Bvar%20f%3Db.entry%2Ce%3Df.interaction_type_slug%2Cl%3Df.item_body.replace(%2F%5Cu201c%7C%5Cu201d%2Fg%2C'%22').replace(%2F%5Cu2019%2Fg%2C%22'%22)%3B%22essay%22%3D%3D%3De%3Fa%2B%3D%22Type%3A%20E%5Cn%22%3A%22matching%22%3D%3D%3De%3Fa%2B%3D%22Type%3A%20MT%5Cn%22%3A%22multi-answer%22%3D%3D%3De%26%26(a%2B%3D%22Type%3A%20MA%5Cn%22)%3Ba%2B%3Dk%2B1%2B%22)%20%5BHTML%5D%22%2Bl%2B%22%5B%2FHTML%5D%5Cn%22%3B%22choice%22%3D%3D%3De%3Ff.interaction_data.choices.forEach(function(c)%7Bvar%20g%3Dc.item_body.replace(%2F%5Cu201c%7C%5Cu201d%2Fg%2C'%22').replace(%2F%5Cu2019%2Fg%2C%22'%22)%2Ch%3Df.scoring_data.value%3D%3D%3Dc.id%3Bc%3DString.fromCharCode(97%2Bc.position-1)%3Ba%2B%3D(h%3F%22*%22%3A%22%22)%2Bc%2B%22.%20%5BHTML%5D%22%2Bg%2B%22%5B%2FHTML%5D%5Cn%22%7D)%3A%22true-false%22%3D%3D%3De%3F(e%3Df.scoring_data.value%2Ca%2B%3D%22a.%20True%5Cnb.%20False%5Cn%22%2Ce%7C%7C(a%3Da.replace(%22a%22%2C%22a%22).replace(%22b%22%2C%22b%22)))%3A%22matching%22%3D%3D%3De%3Ff.scoring_data.edit_data.matches.forEach(function(c%2Cg)%7Bvar%20h%3Dc.question_body.replace(%2F%3C%5B%5E%3E%5D%3E%3F%2Fgm%2C%22%22).replace(%2F%5Cu201c%7C%5Cu201d%2Fg%2C'%22').replace(%2F%5Cu2019%2Fg%2C%22'%22)%2Cm%3Dc.answer_body.replace(%2F%3C%5B%5E%3E%5D*%3E%3F%2Fgm%2C%22%22).replace(%2F%5Cu201c%7C%5Cu201d%2Fg%2C'%22').replace(%2F%5Cu2019%2Fg%2C%22'%22)%2Cn%3DString.fromCharCode(97%2Bg)%3Ba%2B%3Dn%2B%22.%20%22%2Bh%2B%22%20%3D%20%22%2Bm%2B%22%5Cn%22%7D)%3A%22multi-answer%22%3D%3D%3De%26%26f.interaction_data.choices.forEach(function(c)%7Bvar%20g%3Dc.item_body.replace(%2F%5Cu201c%7C%5Cu201d%2Fg%2C'%22').replace(%2F%5Cu2019%2Fg%2C%22'%22)%2Ch%3Df.scoring_data.value.includes(c.id)%3Bc%3DString.fromCharCode(97%2Bc.position-1)%3Ba%2B%3D(h%3F%22*%22%3A%22%22)%2Bc%2B%22.%20%5BHTML%5D%22%2Bg%2B%22%5B%2FHTML%5D%5Cn%22%7D)%7D)%3Breturn%20a%7Dfunction%20downloadFile(d%2Ca)%7Bvar%20b%3Ddocument.createElement(%22a%22)%3Bb.setAttribute(%22href%22%2C%22data%3Atext%2Fplain%3Bcharset%3Dutf-8%2C%22%2BencodeURIComponent(a))%3Bb.setAttribute(%22download%22%2Cd)%3Bb.style.display%3D%22none%22%3Bdocument.body.appendChild(b)%3Bb.click()%3Bdocument.body.removeChild(b)%7Dmain()%3Bvoid+0" id="New2Classic" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', this.href);">New2Classic</a>
+</body>
+</html>
