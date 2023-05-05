@@ -1,17 +1,33 @@
-# New2Classic Bookmarklet
+# Canvas Quiz to Respondus Bookmarklet
 
-This bookmarklet is designed to convert a new quiz format into the classic quiz format, and then download the quiz data as a `.txt` file named `respondus_quiz.txt`.
+This bookmarklet tool extracts quiz data from a Canvas LMS (Learning Management System) New Quiz page and converts it into a Respondus-formatted plain text file that can be imported into a Respondus assessment tool.
 
-## How to use the bookmarklet
+## How it works
 
-1. Create a new bookmark in your browser, and set the bookmark name to "New2Classic".
-2. Copy the entire JavaScript code you provided and paste it as the URL for the bookmark you just created.
-3. Navigate to the quiz page you'd like to convert.
-4. Click on the "New2Classic" bookmark you created earlier, and the quiz will be converted and downloaded as a `.txt` file.
+When the bookmarklet is clicked on a Canvas New Quiz page, it sends a GET request to the Canvas LMS API to retrieve the quiz data for that particular quiz. The quiz data is then parsed and converted into the Respondus format by the `convertQuizData` function.
 
-## Add the bookmarklet link to your README
+The resulting Respondus-formatted quiz data is then downloaded to the user's computer as a plain text file by the `downloadFile` function.
 
-To allow users to drag and drop the bookmarklet link to their address bar or bookmarks toolbar, include the following HTML code in your README:
+Overall, this JavaScript code automates the process of manually copying and pasting quiz data from a Canvas New Quiz page into a Respondus-formatted file, saving time and effort for instructors who need to use both Canvas and Respondus for managing their course assessments.
 
-```html
-<a href="javascript:your_javascript_code_here" id="New2Classic" draggable="true" ondragstart="event.dataTransfer.setData('text/plain', this.href);">New2Classic</a>
+## Usage
+
+To start using the Canvas Quiz to Respondus bookmarklet, please follow these steps:
+
+1. Visit [this page with the Canvas Quiz to Respondus bookmarklet](https://eacjason.github.io/New2Classic/new2Classic.html).
+2. Drag and drop the "Canvas Quiz to Respondus" link on the page to your bookmarks bar.
+3. Navigate to the Canvas LMS and open a New Quiz within a course.
+4. Click the "Canvas Quiz to Respondus" bookmarklet in your bookmarks bar.
+
+The bookmarklet will download a plain text file containing the quiz data in Respondus format, which can be imported into Respondus 4.0.
+
+## Compatibility
+
+The Canvas Quiz to Respondus bookmarklet has been tested and works with most modern browsers, including:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Apple Safari
+
+Please note that the bookmarklet may not work with some older browsers or versions of browsers.
