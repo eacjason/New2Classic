@@ -1,14 +1,14 @@
-# New Canvas Quiz to Respondus Bookmarklet
+# New Canvas Quiz to Respondus 4.0 Bookmarklet
 
-This bookmarklet tool extracts quiz data from a Canvas LMS (Learning Management System) New Quiz page and converts it into a Respondus-formatted plain text file that can be imported into a Respondus assessment tool.
+This bookmarklet tool extracts quiz data from a Canvas LMS (Learning Management System) New Quiz page and converts it into a Respondus 4.0-formatted plain text file that can be imported into a Respondus 4.0 assessment tool.
 
 ## How it works
 
-When you click the bookmarklet on a Canvas New Quiz page, it automatically fetches the quiz information for that specific quiz. Then, it transforms the quiz data into a format compatible with Respondus.
+When you click the bookmarklet on a Canvas New Quiz page, it automatically fetches the quiz information for that specific quiz. Then, it transforms the quiz data into a format compatible with Respondus 4.0.
 
-Once the data is in the Respondus format, the bookmarklet downloads a plain text file to your computer.
+Once the data is in the Respondus 4.0 format, the bookmarklet downloads a plain text file to your computer.
 
-In short, this tool streamlines the process of transferring quiz data from a Canvas New Quiz page to a Respondus-compatible file, making it easier and more efficient for instructors who use both Canvas and Respondus to manage their course assessments.
+In short, this tool streamlines the process of transferring quiz data from a Canvas New Quiz page to a Respondus 4.0-compatible file, making it easier and more efficient for instructors who use both Canvas and Respondus 4.0 to manage their course assessments.
 
 ## Limitations
 
@@ -20,14 +20,14 @@ Please note that the script is still in early development and has some limitatio
 
 ## Instructions for Use
 
-To start using the Canvas Quiz to Respondus bookmarklet, please follow these steps:
+To start using the Canvas Quiz to Respondus 4.0 bookmarklet, please follow these steps:
 
-1. Visit [this page with the Canvas Quiz to Respondus bookmarklet](https://eacjason.github.io/New2Classic/new2Classic.html).
-2. Drag and drop the "Canvas Quiz to Respondus" link on the page to your bookmarks bar.
+1. Visit [this page with the Canvas Quiz to Respondus 4.0 bookmarklet](https://eacjason.github.io/New2Classic/new2Classic.html).
+2. Drag and drop the "Canvas Quiz to Respondus 4.0" link on the page to your bookmarks bar.
 3. Navigate to the Canvas LMS and open a New Quiz within a course.
 4. Click the "New2Classic" bookmarklet in your bookmarks bar.
 
-The bookmarklet will download a plain text file containing the quiz data in Respondus format, which can be imported into Respondus 4.0.
+The bookmarklet will download a plain text file containing the quiz data in Respondus 4.0 format, which can be imported into Respondus 4.0 4.0.
 
 ## Compatibility
 
