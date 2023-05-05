@@ -1,4 +1,4 @@
-# Canvas Quiz to Respondus Bookmarklet
+# New Canvas Quiz to Respondus Bookmarklet
 
 This bookmarklet tool extracts quiz data from a Canvas LMS (Learning Management System) New Quiz page and converts it into a Respondus-formatted plain text file that can be imported into a Respondus assessment tool.
 
