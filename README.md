@@ -4,13 +4,21 @@ This bookmarklet tool extracts quiz data from a Canvas LMS (Learning Management 
 
 ## How it works
 
-When the bookmarklet is clicked on a Canvas New Quiz page, it sends a GET request to the Canvas LMS API to retrieve the quiz data for that particular quiz. The quiz data is then parsed and converted into the Respondus format by the `convertQuizData` function.
+When you click the bookmarklet on a Canvas New Quiz page, it automatically fetches the quiz information for that specific quiz. Then, it transforms the quiz data into a format compatible with Respondus.
 
-The resulting Respondus-formatted quiz data is then downloaded to the user's computer as a plain text file by the `downloadFile` function.
+Once the data is in the Respondus format, the bookmarklet downloads a plain text file to your computer.
 
-Overall, this JavaScript code automates the process of manually copying and pasting quiz data from a Canvas New Quiz page into a Respondus-formatted file, saving time and effort for instructors who need to use both Canvas and Respondus for managing their course assessments.
+In short, this tool streamlines the process of transferring quiz data from a Canvas New Quiz page to a Respondus-compatible file, making it easier and more efficient for instructors who use both Canvas and Respondus to manage their course assessments.
 
-## Usage
+## Limitations
+
+Please note that the script is still in early development and has some limitations:
+
+- It currently only supports exporting basic quiz types (multiple choice, essay, true/false, and matching).
+- It cannot yet handle quizzes that pull from an item bank.
+- The script is designed to work with quizzes containing 100 or fewer questions.
+
+## Instructions for Use
 
 To start using the Canvas Quiz to Respondus bookmarklet, please follow these steps:
 
@@ -22,12 +30,5 @@ To start using the Canvas Quiz to Respondus bookmarklet, please follow these ste
 The bookmarklet will download a plain text file containing the quiz data in Respondus format, which can be imported into Respondus 4.0.
 
 ## Compatibility
-
-The Canvas Quiz to Respondus bookmarklet has been tested and works with most modern browsers, including:
-
-- Google Chrome
-- Mozilla Firefox
-- Microsoft Edge
-- Apple Safari
 
 Please note that the bookmarklet may not work with some older browsers or versions of browsers.
