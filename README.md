@@ -25,7 +25,7 @@ To start using the Canvas Quiz to Respondus bookmarklet, please follow these ste
 1. Visit [this page with the Canvas Quiz to Respondus bookmarklet](https://eacjason.github.io/New2Classic/new2Classic.html).
 2. Drag and drop the "Canvas Quiz to Respondus" link on the page to your bookmarks bar.
 3. Navigate to the Canvas LMS and open a New Quiz within a course.
-4. Click the "Canvas Quiz to Respondus" bookmarklet in your bookmarks bar.
+4. Click the "New2Classic" bookmarklet in your bookmarks bar.
 
 The bookmarklet will download a plain text file containing the quiz data in Respondus format, which can be imported into Respondus 4.0.
 
